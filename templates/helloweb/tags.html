@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/assets/css/hello.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        table {  }
+        td    { border-collapse : collapse; border 1ppadding:10px 7px 80px 80px }
+    </style>
+</head>
+<br>
+
+    <form action="/helloweb/join" method="post">{% csrf_token %}
+        이메일: <input type="text" name="email" value=""/>
+        <br/><br/>
+
+        비밀번호: <input type="password" name="password" value=""/>
+        <br/><br/>
+
+        성별: <input type="radio" name="gender" value="male" checked="checked">남
+            <input type="radio" name="gender" value="female">여
+        <br/><br/>
+
+        생년:
+        <select name="birth-year">
+            <option value="2018">2018년</option>
+            <option value="2017">2017년</option>
+            <option value="2016">2016년</option>
+            <option value="2015">2015년</option>
+            <option value="2014">2014년</option>
+            <option value="2013">2013년</option>
+            <option value="2012">2012년</option>
+        </select>
+        <br/><br/>
+
+        취미:
+        <input type="checkbox" name="hobby" value="reading">독서
+        <input type="checkbox" name="hobby" value="playing game">게임
+        <input type="checkbox" name="hobby" value="coding">코딩
+        <input type="checkbox" name="hobby" value="watching movie">영화
+        <br/><br/>
+
+        자기소개
+        <br/>
+        <textarea name="self - introducing"></textarea>
+        <br/><br/>
+
+        <input type="submit" value="회원가입"/>
+    </form>
+
+    <h1>제목입니다.</h1>
+    <h2>제목입니다.</h2>
+    <h3>제목입니다.</h3>
+    <h4>제목입니다.</h4>
+    <h5>제목입니다.</h5>
+    <h6>제목입니다.</h6>
+    <h7>제목입니다.</h7>
+    <!-- h6까지밖에 안나옴 -->
+
+    <a href="http://www.naver.com" target="_blank">다른 도메인으로 연결하는 경우</a></br>
+    <a href="/helloweb/hello">같은 도메인에서 '절대경로'로 연결하는 경우</a></br>
+    <!-- 같은도메인은 '포트번호'이후로 적어주면 됨 '/'제외 = 꼭! 써줘야함 -->
+    <a href="hello">같은 도메인에서 '상대경로'로 연결하는 경우</a></br>
+    <!-- 상대경로는 포트번호 이후 자동으로 자신의 디렉토리 경로를 적어줌 '/'까지 -->
+
+    <a href="/assets/images/shoes2.jpg">
+        <img src="/assets/images/shoes.JPG">
+    </a>
+
+    <p>
+        내 검색어는 <em>최대 10개</em> 까지 저장할 수 있습니다.
+        추가하시려면 기존의 <strong>검색어를</strong> 지워주세여
+    </p>
+
+    <table>
+        <tr>
+            <td>cell(0,0)</td>
+            <td>cell(0,1)</td>
+            <td>cell(0,2)</td>
+        </tr>
+
+        <tr>
+            <td>cell(1,0)</td>
+            <td>cell(1,1)</td>
+            <td>cell(1,2)</td>
+        </tr>
+
+        <tr>
+            <td>cell(2,0)</td>
+            <td>cell(2,1)</td>
+            <td>cell(2,2)</td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>

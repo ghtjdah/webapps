@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+
+table ,td   { border-collapse:collapse; border:7px #909 solid; }
+table       { width:100px }
+td          { padding:10px 7px 10px 10px }
+textarea    { width:300px; height:100px }
